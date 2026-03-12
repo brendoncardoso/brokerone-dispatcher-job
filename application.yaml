@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/SEU-USUARIO/SEU-REPO.git
+    repoURL: https://github.com/brendoncardoso/brokerone-dispatcher-job
     targetRevision: main
     path: brokeone-dispatcher-job
   destination:
