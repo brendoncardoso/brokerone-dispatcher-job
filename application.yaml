@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: brokeone-dispatcher-job-local
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/SEU-USUARIO/SEU-REPO.git
+    targetRevision: main
+    path: brokeone-dispatcher-job
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: local
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
