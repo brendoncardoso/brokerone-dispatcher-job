@@ -6,15 +6,14 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/brendoncardoso/brokerone-kafka-dispatcher
+    repoURL: https://github.com/brendoncardoso/brokerone-kafka-dispatcher.git
     targetRevision: main
-    path: .
+    path: brokerone-kafka-dispatcher
   destination:
     server: https://kubernetes.default.svc
     namespace: local
   syncPolicy:
     automated:
-      prune: true
       selfHeal: true
     syncOptions:
       - CreateNamespace=true
