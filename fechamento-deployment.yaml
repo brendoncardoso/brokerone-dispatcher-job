@@ -38,13 +38,13 @@ spec:
               value: brokerone-fechamento-dispatcher-keys-local
 
             - name: FECHAMENTO_MAX_EXISTING_JOBS
-              value: 5
+              value: "5"
 
             - name: FECHAMENTO_JOB_TTL_SECONDS
-              value: 50
+              value: "50"
 
             - name: FECHAMENTO_JOB_ACTIVE_DEADLINE_SECONDS
-              value: 300
+              value: "300"
 
             - name: ARGOCD_APP_INSTANCE
               value: brokerone-fechamento-dispatcher-local
