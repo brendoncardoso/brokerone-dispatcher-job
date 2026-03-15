@@ -53,8 +53,8 @@ spec:
                 name: brokerone-fechamento-dispatcher-keys-local
           resources:
             limits:
-              cpu: 0.5
-              memory: 512Mi
+              cpu: "0.5"
+              memory: "512Mi"
             requests:
-              cpu: 0.1
-              memory: 300Mi
+              cpu: "0.1"
+              memory: "300Mi"
